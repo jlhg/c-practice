@@ -34,10 +34,11 @@ void swap(int *data, int x, int y)
 int main(int argc, char *argv[])
 {
         int data[] = {19, 58, 33, 41, 28, 14, 53, 84};
-        selection_sort(data, 8);
+        int len = 8;
+        selection_sort(data, len);
 
         int i;
-        for (i = 0; i < 8; ++i) {
+        for (i = 0; i < len; ++i) {
                 printf("%d ", data[i]);
         }
         printf("\n");
