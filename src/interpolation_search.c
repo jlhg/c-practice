@@ -6,17 +6,17 @@ void interpolation_search(int data[], int len, int search);
 void interpolation_search(int data[], int len, int search)
 {
         int low = 0;
-        int up = len - 1;
+        int high = len - 1;
 
-        while (low <= up) {
-                int mid = low + (up - low) * (search - data[low])
-                        / (data[up] - data[low]);
+        while (low <= high) {
+                int mid = low + (high - low) * (search - data[low])
+                        / (data[high] - data[low]);
 
                 if (data[mid] == search) {
                         printf("%d\n", mid);
                         return;
                 } else if (data[mid] > search) {
-                        up = mid - 1;
+                        high = mid - 1;
                 } else if (data[mid] < search) {
                         low = mid + 1;
                 }
