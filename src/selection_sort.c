@@ -2,7 +2,7 @@
 
 
 void selection_sort(int *data, int len);
-void swap(int *data, int x, int y);
+void swap(int *x, int *y);
 
 
 void selection_sort(int *data, int len)
@@ -15,18 +15,18 @@ void selection_sort(int *data, int len)
                                 min = j;
                         }
                 }
-                swap(data, i, min);
+                swap(&data[i], &data[min]);
         }
 }
 
 
-void swap(int *data, int x, int y)
+void swap(int *x, int *y)
 {
         int temp;
 
-        temp = data[x];
-        data[x] = data[y];
-        data[y] = temp;
+        temp = *x;
+        *x = *y;
+        *y = temp;
 }
 
 

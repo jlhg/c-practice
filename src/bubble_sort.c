@@ -2,7 +2,7 @@
 
 
 void bubble_sort(int *data, int len);
-void swap(int *data, int x, int y);
+void swap(int *x, int *y);
 
 
 void bubble_sort(int *data, int len)
@@ -11,20 +11,20 @@ void bubble_sort(int *data, int len)
         for (i = len - 1; i > 1; --i) {
                 for (j = 0; j < i; ++j) {
                         if (data[j] > data[j + 1]) {
-                                swap(data, j, j + 1);
+                                swap(&data[j], &data[j + 1]);
                         }
                 }
         }
 }
 
 
-void swap(int *data, int x, int y)
+void swap(int *x, int *y)
 {
         int temp;
 
-        temp = data[x];
-        data[x] = data[y];
-        data[y] = temp;
+        temp = *x;
+        *x = *y;
+        *y = temp;
 }
 
 
