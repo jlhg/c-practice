@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-void merge_sort(int *data, int len);
-void merge(int *data, int *left, int *right, int x, int y);
+void merge_sort(int data[], int len);
+void merge(int data[], int *left, int *right, int x, int y);
 
 
-void merge_sort(int *data, int len)
+void merge_sort(int data[], int len)
 {
         if (len <= 1)
                 return;
@@ -27,7 +27,7 @@ void merge_sort(int *data, int len)
 }
 
 
-void merge(int *data, int *left, int *right, int x, int y)
+void merge(int data[], int *left, int *right, int x, int y)
 {
         int i = 0, j = 0, k = 0;
 
@@ -56,7 +56,7 @@ void merge(int *data, int *left, int *right, int x, int y)
 }
 
 
-int main(int argc, char *argv[])
+int main()
 {
         int data[] = {84, 13, 73, 26, 32, 19, 91, 38};
         int len = 8;

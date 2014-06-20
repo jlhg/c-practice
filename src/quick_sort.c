@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-void quick_sort(int *data, int left, int right);
+void quick_sort(int data[], int left, int right);
 void swap(int *x, int *y);
 
 
-void quick_sort(int *data, int left, int right)
+void quick_sort(int data[], int left, int right)
 {
         if (left >= right)
                 return;

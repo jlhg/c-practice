@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 
-void insertion_sort(int *data, int len);
+void insertion_sort(int data[], int len);
 
 
-void insertion_sort(int *data, int len)
+void insertion_sort(int data[], int len)
 {
         int i, j, temp;
         for (i = 1; i < len; ++i) {
@@ -19,7 +19,7 @@ void insertion_sort(int *data, int len)
 }
 
 
-int main(int argc, char *argv[])
+int main()
 {
         int data[] = {83, 31, 96, 17, 42, 14, 54};
         int len = 7;

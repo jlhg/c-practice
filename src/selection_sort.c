@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-void selection_sort(int *data, int len);
+void selection_sort(int data[], int len);
 void swap(int *x, int *y);
 
 
-void selection_sort(int *data, int len)
+void selection_sort(int data[], int len)
 {
         int i, j, min;
         for (i = 0; i < len; ++i) {
@@ -30,7 +30,7 @@ void swap(int *x, int *y)
 }
 
 
-int main(int argc, char *argv[])
+int main()
 {
         int data[] = {19, 58, 33, 41, 28, 14, 53, 84};
         int len = 8;

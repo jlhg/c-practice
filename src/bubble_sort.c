@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-void bubble_sort(int *data, int len);
+void bubble_sort(int data[], int len);
 void swap(int *x, int *y);
 
 
-void bubble_sort(int *data, int len)
+void bubble_sort(int data[], int len)
 {
         int i, j;
         for (i = len - 1; i > 1; --i) {
@@ -28,7 +28,7 @@ void swap(int *x, int *y)
 }
 
 
-int main(int argc, char *argv[])
+int main()
 {
         int data[] = {1, 43, 6, 79, 50, 2};
         int len = 6;
