@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-
 void quick_sort(int data[], int left, int right);
 void swap(int *x, int *y);
-
 
 void quick_sort(int data[], int left, int right)
 {
@@ -41,13 +39,11 @@ void quick_sort(int data[], int left, int right)
         quick_sort(data, j + 1, right);
 }
 
-
 void swap(int *x, int *y) {
         int temp = *x;
         *x = *y;
         *y = temp;
 }
-
 
 int main()
 {

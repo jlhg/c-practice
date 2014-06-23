@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 int gcd(int i, int j);
-
 
 int gcd(int i, int j)
 {
@@ -13,7 +11,6 @@ int gcd(int i, int j)
                 return gcd(j, k);
         }
 }
-
 
 int main()
 {

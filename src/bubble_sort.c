@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-
 void bubble_sort(int data[], int len);
 void swap(int *x, int *y);
-
 
 void bubble_sort(int data[], int len)
 {
@@ -17,7 +15,6 @@ void bubble_sort(int data[], int len)
         }
 }
 
-
 void swap(int *x, int *y)
 {
         int temp;
@@ -26,7 +23,6 @@ void swap(int *x, int *y)
         *x = *y;
         *y = temp;
 }
-
 
 int main()
 {

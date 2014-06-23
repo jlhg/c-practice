@@ -2,16 +2,13 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
 typedef struct listnode {
         int data;
         struct listnode *next;
 } ListNode;
 
-
 void print_linked_list(ListNode *head);
 ListNode *insert_linked_list(ListNode *head, int data);
-
 
 void print_linked_list(ListNode *head)
 {
@@ -22,14 +19,12 @@ void print_linked_list(ListNode *head)
 
 }
 
-
 ListNode *insert_linked_list(ListNode *head, int data)
 {
         ListNode *current = malloc(sizeof(ListNode));
         assert(current != NULL);
         ListNode *ptr;
         ListNode *last;
-
 
         /*
          * 如果 head 為 NULL 代表鏈結序列是空的。回傳剛才要到的新節點
@@ -41,8 +36,6 @@ ListNode *insert_linked_list(ListNode *head, int data)
                 return current;
         }
 
-
-
         /* 尋找第一個不小於要加入資料的節點。用變數 last 保留上一個節點。 */
         last = NULL;
         ptr = head;
@@ -50,7 +43,6 @@ ListNode *insert_linked_list(ListNode *head, int data)
                 last = ptr;
                 ptr = ptr->next;
         }
-
 
         /*
          * 如果 while 迴圈結束後 last 為 NULL，代表要加入的資料是最小的，
@@ -61,7 +53,6 @@ ListNode *insert_linked_list(ListNode *head, int data)
                 current->next = head;
                 return current;
         } else {
-
                 /*
                  * 如果 while 迴圈結束後 last 不為 NULL，則將剛才要到的新節點
                  * current 加到 last 後面即可。
@@ -71,7 +62,6 @@ ListNode *insert_linked_list(ListNode *head, int data)
                 return head;
         }
 }
-
 
 int main()
 {

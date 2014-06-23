@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-
 void merge_sort(int data[], int len);
 void merge(int data[], int *left, int *right, int x, int y);
-
 
 void merge_sort(int data[], int len)
 {
         if (len <= 1)
                 return;
 
-        int x, y, i, j;
+        int x, y, i;
         x = len / 2;
         y = len - x;
 
@@ -25,7 +23,6 @@ void merge_sort(int data[], int len)
         merge_sort(right, y);
         merge(data, left, right, x, y);
 }
-
 
 void merge(int data[], int *left, int *right, int x, int y)
 {
@@ -54,7 +51,6 @@ void merge(int data[], int *left, int *right, int x, int y)
                 k += 1;
         }
 }
-
 
 int main()
 {

@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 void palce_queen(const int col, int queen_pos[], const int max_col);
-
 
 void place_queen(const int col, int queen_pos[], const int max_col)
 {
@@ -33,7 +31,6 @@ void place_queen(const int col, int queen_pos[], const int max_col)
         }
 
 }
-
 
 int main()
 {

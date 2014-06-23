@@ -2,7 +2,6 @@
 
 void interpolation_search(int data[], int len, int search);
 
-
 void interpolation_search(int data[], int len, int search)
 {
         int low = 0;
@@ -22,7 +21,6 @@ void interpolation_search(int data[], int len, int search)
                 }
         }
 }
-
 
 int main()
 {

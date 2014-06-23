@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 void binary_search(int data[], int len, int search);
-
 
 void binary_search(int data[], int len, int search)
 {
@@ -22,7 +20,6 @@ void binary_search(int data[], int len, int search)
                 }
         }
 }
-
 
 int main()
 {

@@ -3,17 +3,14 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
 typedef struct treenode {
         int data;
         struct treenode *left;
         struct treenode *right;
 } TreeNode;
 
-
 void print_bs_tree(TreeNode *root);
 TreeNode *insert_bs_tree(TreeNode *root, int data);
-
 
 void print_bs_tree(TreeNode *root)
 {
@@ -24,7 +21,6 @@ void print_bs_tree(TreeNode *root)
         printf("data = %d\n", root->data);
         print_bs_tree(root->right);
 }
-
 
 TreeNode *insert_bs_tree(TreeNode *root, int data)
 {
@@ -58,7 +54,6 @@ TreeNode *insert_bs_tree(TreeNode *root, int data)
 
         return root;
 }
-
 
 int main()
 {

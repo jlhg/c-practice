@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 typedef struct {
         int board_size;
         char** checkerboard;
@@ -10,10 +9,8 @@ typedef struct {
         int *left;
 } ChessBoard;
 
-
 int queens(ChessBoard *chessboard, int x, int *num);
 void print(ChessBoard *chessboard);
-
 
 int queens(ChessBoard *chessboard, int x, int *num) {
         int n = chessboard->board_size;
@@ -46,7 +43,6 @@ int queens(ChessBoard *chessboard, int x, int *num) {
 
 }
 
-
 void print(ChessBoard *chessboard)
 {
     int i, j;
@@ -59,7 +55,6 @@ void print(ChessBoard *chessboard)
         printf("\n");
     }
 }
-
 
 int main()
 {

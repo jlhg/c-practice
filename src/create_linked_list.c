@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
 typedef struct listnode {
         int data;
         struct listnode *next;
 } ListNode;
 
 void print_linked_list(ListNode *head);
-
 
 void print_linked_list(ListNode *head)
 {
@@ -18,7 +16,6 @@ void print_linked_list(ListNode *head)
                 printf("data = %d\n", ptr->data);
 
 }
-
 
 int main()
 {

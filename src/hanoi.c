@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 void hanoi(int n, char src, char buffer, char dst);
-
 
 void hanoi(int n, char src, char buffer, char dst)
 {
@@ -14,7 +12,6 @@ void hanoi(int n, char src, char buffer, char dst)
                 hanoi(n - 1, buffer, src, dst);
         }
 }
-
 
 int main()
 {

@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-
 void selection_sort(int data[], int len);
 void swap(int *x, int *y);
-
 
 void selection_sort(int data[], int len)
 {
@@ -19,7 +17,6 @@ void selection_sort(int data[], int len)
         }
 }
 
-
 void swap(int *x, int *y)
 {
         int temp;
@@ -28,7 +25,6 @@ void swap(int *x, int *y)
         *x = *y;
         *y = temp;
 }
-
 
 int main()
 {

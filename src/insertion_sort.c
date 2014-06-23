@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 void insertion_sort(int data[], int len);
-
 
 void insertion_sort(int data[], int len)
 {
@@ -17,7 +15,6 @@ void insertion_sort(int data[], int len)
                 data[j + 1] = temp;
         }
 }
-
 
 int main()
 {

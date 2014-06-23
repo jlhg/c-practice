@@ -1,10 +1,8 @@
 /* Fibonacci Sequence */
 #include <stdio.h>
 
-
 int fib(int n);
 int fib_2(int n);
-
 
 int fib(int n) {
         if (n == 0 || n == 1)
@@ -12,7 +10,6 @@ int fib(int n) {
 
         return fib(n - 1) + fib(n - 2);
 }
-
 
 int fib_2(int n) {
         if (n == 0 || n == 1)

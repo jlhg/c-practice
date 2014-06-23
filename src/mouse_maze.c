@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-
 int in_maze(int row, int col, int nrow, int ncol);
 int go_maze(int maze[100][100], int step, int current_row, int current_col,
             int end_row, int end_col, int nrow, int ncol);
-
 
 int in_maze(int row, int col, int nrow, int ncol)
 {
         return row >= 0 && row < nrow && col >= 0 && col < ncol;
 }
-
 
 int go_maze(int maze[100][100], int step, int current_row, int current_col,
             int end_row, int end_col, int nrow, int ncol)
@@ -39,14 +36,14 @@ int go_maze(int maze[100][100], int step, int current_row, int current_col,
         return 0;
 }
 
-
 int main()
 {
         int nrow = 4, ncol = 5;
 
-        /* Maze initialization
-           0 = have a way
-           -1 = no way
+        /*
+         * Maze initialization
+         * 0 = have a way
+         * -1 = no way
          */
         int maze[100][100] = {
                 {0, 0, 0, -1, 0},
