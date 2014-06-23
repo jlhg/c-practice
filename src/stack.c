@@ -26,7 +26,7 @@ void push_stack(stack *s, char c)
         s->top++;
 }
 
-int pop_stack(stack *s)
+char pop_stack(stack *s)
 {
         if (stack_empty(s)) {
                 printf("stack is empty\n");
