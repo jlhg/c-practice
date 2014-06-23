@@ -64,7 +64,7 @@ void free_lists(Node *lists)
 }
 
 
-int main(int argc, char *argv[])
+int main()
 {
         Node *lists = create_node(0);
         Node *a = create_node(1);
