@@ -26,7 +26,7 @@ void swap(int *x, int *y)
         *y = temp;
 }
 
-int main()
+int main(void)
 {
         int data[] = {19, 58, 33, 41, 28, 14, 53, 84};
         int len = 8;

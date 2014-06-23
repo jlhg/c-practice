@@ -52,7 +52,7 @@ void merge(int data[], int *left, int *right, int x, int y)
         }
 }
 
-int main()
+int main(void)
 {
         int data[] = {84, 13, 73, 26, 32, 19, 91, 38};
         int len = 8;

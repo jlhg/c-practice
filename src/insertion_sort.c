@@ -16,7 +16,7 @@ void insertion_sort(int data[], int len)
         }
 }
 
-int main()
+int main(void)
 {
         int data[] = {83, 31, 96, 17, 42, 14, 54};
         int len = 7;

@@ -12,7 +12,7 @@ int gcd(int i, int j)
         }
 }
 
-int main()
+int main(void)
 {
         int i = 10;
         int j = 12;

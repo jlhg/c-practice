@@ -21,7 +21,7 @@ void binary_search(int data[], int len, int search)
         }
 }
 
-int main()
+int main(void)
 {
         int data[] = {3, 7, 14, 20, 23, 32, 41, 44, 56, 57, 73, 89, 93};
         int len = 12;

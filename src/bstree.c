@@ -55,7 +55,7 @@ TreeNode *insert_bs_tree(TreeNode *root, int data)
         return root;
 }
 
-int main()
+int main(void)
 {
         int i;
         int array_size = 5;

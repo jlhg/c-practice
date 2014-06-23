@@ -56,7 +56,7 @@ void print(ChessBoard *chessboard)
     }
 }
 
-int main()
+int main(void)
 {
         int i, j;
         int n = 10;

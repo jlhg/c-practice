@@ -45,7 +45,7 @@ void swap(int *x, int *y) {
         *y = temp;
 }
 
-int main()
+int main(void)
 {
 
         int data[] = {26, 13, 73, 31, 38};

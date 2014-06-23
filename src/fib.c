@@ -26,7 +26,7 @@ int fib_2(int n) {
         return data[n];
 }
 
-int main()
+int main(void)
 {
         int n = 6;
         printf("%d\n", fib(n));

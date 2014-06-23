@@ -22,7 +22,7 @@ void interpolation_search(int data[], int len, int search)
         }
 }
 
-int main()
+int main(void)
 {
         int data[] = {5, 12, 19, 26, 37, 44, 60, 65, 73, 85};
         int len = 10;

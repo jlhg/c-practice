@@ -32,7 +32,7 @@ void place_queen(const int col, int queen_pos[], const int max_col)
 
 }
 
-int main()
+int main(void)
 {
         int max_col = 8;
         int queen_pos[max_col];

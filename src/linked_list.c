@@ -56,7 +56,7 @@ void free_lists(Node *lists)
         free(lists);
 }
 
-int main()
+int main(void)
 {
         Node *lists = create_node(0);
         Node *a = create_node(1);

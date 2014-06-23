@@ -63,7 +63,7 @@ ListNode *insert_linked_list(ListNode *head, int data)
         }
 }
 
-int main()
+int main(void)
 {
         int i;
         int array_size = 5;

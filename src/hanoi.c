@@ -13,7 +13,7 @@ void hanoi(int n, char src, char buffer, char dst)
         }
 }
 
-int main()
+int main(void)
 {
         int n = 3;
         hanoi(n, 'A', 'B', 'C');

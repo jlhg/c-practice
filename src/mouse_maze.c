@@ -36,7 +36,7 @@ int go_maze(int maze[100][100], int step, int current_row, int current_col,
         return 0;
 }
 
-int main()
+int main(void)
 {
         int nrow = 4, ncol = 5;
 
