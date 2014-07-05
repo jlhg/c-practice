@@ -35,22 +35,24 @@ int maxprod_2(int data[], int len)
         int max = data[0] * data[1];
         int current = data[0];
         for (i = 1; i < len; ++i) {
-                if (data[i] == 0)
-                        current = 1;
-                else
+                if (data[i - 1] == 0) {
+                        current = data[i];
+                } else {
                         current *= data[i];
-                if (current > max)
-                        max = current;
+                        if (current > max)
+                                max = current;
+                }
         }
 
         current = data[len - 1];
         for (i = len - 2; i >= 0; --i) {
-                if (data[i] == 0)
-                        current = 1;
-                else
+                if (data[i + 1] == 0) {
+                        current = data[i];
+                } else {
                         current *= data[i];
-                if (current > max)
-                        max = current;
+                        if (current > max)
+                                max = current;
+                }
         }
 
         return max;
@@ -79,6 +81,15 @@ int main()
 
         int data_7[] = {-1, -2, -3, -4, -5, -6, -7};
         printf("Case 7: %d\n", maxprod_2(data_7, 7));
+
+        int data_8[] = {0, 5, 10, 2, 0};
+        printf("Case 8: %d\n", maxprod_2(data_8, 5));
+
+        int data_9[] = {0, 5, 0, 2, 0};
+        printf("Case 9: %d\n", maxprod_2(data_9, 5));
+
+        int data_10[] = {0, 0, 0};
+        printf("Case 10: %d\n", maxprod_2(data_10, 3));
 
         return 0;
 }
